@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e2dfdf;
+  color: #131212;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.website-title {
+  text-align: center;
+}
+
+.website-title h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.website-title p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(70, 19, 19);
+  padding: 10px 0;
+}
+
+.navigation a {
+  color: #4624c0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #bafa0a;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  background-color: #bbb9b9;
+  padding: 20px;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sidebar {
+  background-color: #ffe2e2;
+  padding: 20px;
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.post-container img {
+  flex-basis: calc(33.33% - 40px);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-container img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .post-container img {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .post-container img {
+    flex-basis: 100%;
+  }
+}
+.content {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+  background-color: #bbb9b9;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
